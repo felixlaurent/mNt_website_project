@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M&T-SUBSCRIBE</title>
+    <link rel ="stylesheet" media="screen and (min-width:801px)" href="style1.css">
+    <link rel ="stylesheet" media="screen and (max-width:800px)" href="style2.css">   
+    <link rel = "icon" href ="img/favicon.png">
+    <script src = "./subs.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class ="logo">
+            <img src ="img/logo1.png" onclick="window.location.href='index.html'">
+        </div>
+        <nav>
+            <ul>
+                <li onclick="window.location.href='index.html'">Home</li>
+                <li onclick="window.location.href='clothes.html'">Clothes</li>
+                <li onclick="window.location.href='aboutus.html'">About Us</li>
+                <li onclick="window.location.href='locations.html'">Locations</li>
+                <li onclick="window.location.href='subscribe.html'"style ="font-weight: bold;">Subscribe</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="form_box">
+        <h1>SUBSCRIBE NOW</h1>
+        <p>Receive our new products information</p>
+        <form>
+            <label class="label_input">Name:</label><br>
+            <input type="text" class="input_box" id="input_name" placeholder="Insert Your Name" required/><br>
+            <p id="error1"></p>
+            <label class="label_input">Email:</label><br>
+            <input type="email" class="input_box" id="input_email" placeholder="Insert Your Email" required/><br>
+            <p id="error2"></p>
+            <label class="label_input">Phone Number:</label><br>
+            <input type="text" class="input_box" id="input_phone" placeholder="Insert Your Phone Number" required/><br>
+            <p id="error3"></p>
+            <label class="label_input">Country:</label><br>
+            <select class="select_box" id="input_country" >
+                <option value="">Select Your Country</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Singapore">Singapore</option>
+            </select><br>
+            <p id="error4"></p>
+            <input type="checkbox" id="input_tnc" class="check_box"  ><label class="label_input"> I agree with the terms and conditions</label><br>
+            <p id="error5"></p>
+            <input type ="button" value ="SUBSCRIBE" class="subs_button" onclick ="validate()">
+        </form>
+    </div>
+    <footer>
+        <div class="bag1">
+            <img src ="img/logo2.png" class="logo2">
+            <div class ="logofooter">
+                <a href="https://www.instagram.com/uniqlo/"><img src ="img/logoig.png" class="sosmed"></a>
+                <a href="https://id-id.facebook.com/UniqloIndonesiaOfficial/"><img src ="img/logofb.png" class="sosmed"></a>
+            </div>
+            <p>COPYRIGHT © 2022 M&T. CO. LTD. ALL RIGHT RESERVED</p>
+        </div>
+        <div class="bag2">
+            <h2>Pages</h2>
+            <p onclick="window.location.href='index.html'">Home</p>
+            <p onclick="window.location.href='clothes.html'">Clothes</p>
+            <p onclick="window.location.href='aboutus.html'">About Us</p>
+            <p onclick="window.location.href='locations.html'">Location</p>
+            <p onclick="window.location.href='subscribe.html'">Subscribe</p>
+        </div>
+    </footer>
+</body>
+</html>
